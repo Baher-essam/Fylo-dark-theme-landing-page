@@ -1,0 +1,18 @@
+@import url(spaces.css);
+:root{
+    /*background colors*/
+    --main-bg-color : #181f2a;
+    --footer-bg-color : #0b1523;
+    --testimonials-bg-color : #202a3c;
+    --intro-bg-color : #1c2431;
+    /*color*/
+    --font-color: #ffffff;
+    --Cyan :#65e2d9;
+    --blue: #339ecc;
+    --light-red:hsl(0, 100%, 63%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
