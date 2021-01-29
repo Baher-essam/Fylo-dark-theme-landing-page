@@ -16,3 +16,54 @@
     margin: 0;
     box-sizing: border-box;
 }
+.intro {background-color: var(--main-bg-color);}
+/*start of intros section*/
+.intro
+{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    background: url(../images/bg-curvy-desktop.svg),var( --intro-bg-color);
+    background-position: center bottom, center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.intro .container {
+    width: 30%;
+    padding: 5% 0;
+}
+.header-content h5{font-weight: 700;}
+.header-content p {font-size: 14px;}
+.header-content a{
+    background: linear-gradient(to right, #65e2d9 10%, #339ecc 100%);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+/*end of intro section*/
+/*start of media query*/
+@media only screen and (max-width: 1025px)
+{
+    .intro .container {width: 50%;}
+}
+
+@media only screen and (max-width:769px)
+{
+
+}
+@media only screen and (max-width:571px)
+{
+    .intro .container {width: 90%;}
+    .intro{
+        background: url(../images/bg-curvy-mobile.svg), linear-gradient( to top, #181f2b 0%, #181f2b 30%, #1b2330 30%, #1b2330 100% );
+        background-position: center bottom 37%, center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+@media only screen and (max-width:426px)
+{
+    .header-content h5{line-height: 2;}
+    .intro .container {width: 90%;}
+}
