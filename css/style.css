@@ -16,7 +16,16 @@
     margin: 0;
     box-sizing: border-box;
 }
-.intro {background-color: var(--main-bg-color);}
+/*start of header*/
+header
+{
+    font-family: 'Raleway', sans-serif;
+    background-color: var( --intro-bg-color);
+}
+.brand-logo {text-align: center;}
+.brand-logo img {width: 80%;}
+/*end of header*/
+main {background-color: var(--main-bg-color);}
 /*start of intros section*/
 .intro
 {
@@ -46,6 +55,15 @@
 @media only screen and (max-width: 1025px)
 {
     .intro .container {width: 50%;}
+    .brand-logo {
+        left: 0 !important;
+        transform: translateX(0) !important;
+        -webkit-transform: translateX(0) !important;
+        -moz-transform: translateX(0) !important;
+        -ms-transform: translateX(0) !important;
+        -o-transform: translateX(0) !important;
+        text-align: left;
+}
 }
 
 @media only screen and (max-width:769px)
@@ -64,6 +82,21 @@
 }
 @media only screen and (max-width:426px)
 {
+    nav.px40{
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+    }
+    nav ul a
+    {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .brand-logo img {width: 60%;}
     .header-content h5{line-height: 2;}
     .intro .container {width: 90%;}
+}
+@media only screen and (max-width:376px)
+{
+
 }
