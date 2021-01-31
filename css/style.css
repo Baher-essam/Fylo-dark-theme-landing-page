@@ -70,8 +70,41 @@ main {background-color: var(--main-bg-color);}
 /*start of productivity section*/
 .productivity{margin: 5% 0 0 0; padding: 5% 0;}
 .productivity .row {display: flex; align-items: center;}
+.productivity-data p {font-weight: 300; font-size: 14px;}
+.productivity-data a {text-decoration: underline;}
 /*end of productivity section*/
 
+
+/*start of testimonials section*/
+.testimonial-data  {background-color: var( --testimonials-bg-color);}
+.testimonial-content >p
+{
+    font-weight: 300;
+    font-size: 12px;
+}
+.reviewer 
+{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.reviewer .reviewer-img{ width: 10%;}
+.reviewer .reviewer-img img
+{
+    
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.reviewer-data h6 {font-size: 12px; font-weight: 500;}
+.reviewer-data p 
+{
+    font-size: 9px;
+    font-weight: 300;
+}
+/*end of testimonials section*/
 /*start of media query*/
 @media only screen and (max-width: 1025px)
 {
@@ -95,6 +128,7 @@ main {background-color: var(--main-bg-color);}
 @media only screen and (max-width:571px)
 {
     .intro .container {width: 90%;}
+    .testimonials .container {width: auto;}
     .intro{
         background: url(../images/bg-curvy-mobile.svg), linear-gradient( to top, #181f2b 0%, #181f2b 30%, #1b2330 30%, #1b2330 100% );
         background-position: center bottom 37%, center;
