@@ -1,4 +1,4 @@
-@import url(spaces.css);
+@import url(spaces.min.css);
 :root{
     /*background colors*/
     --main-bg-color : #181f2a;
@@ -202,6 +202,21 @@ footer .email
 {
     background: url(../images/icon-email.svg) no-repeat left top 0.4rem;
 }
+.social-icons li{
+    display: inline;
+    padding: 0 3px;
+  }
+  .social-icons li svg path{
+    display: inline;
+    padding: 0 3px;
+    transition: all ease 0.4s;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+  }
+  .social-icons li a{text-decoration: none !important;}
+  .social-icons li:hover svg path {fill:#007bff;}
 /*end of footer*/
 /*start of media query*/
 @media only screen and (max-width: 1025px)
@@ -272,8 +287,4 @@ footer .email
     .brand-logo img {width: 60%;}
     .header-content h5{line-height: 2;}
     .intro .container {width: 90%;}
-}
-@media only screen and (max-width:376px)
-{
-
 }
