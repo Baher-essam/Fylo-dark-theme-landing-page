@@ -216,7 +216,7 @@ footer .email
     -o-transition: all ease 0.4s;
   }
   .social-icons li a{text-decoration: none !important;}
-  .social-icons li:hover svg path {fill:#fff;}
+  .social-icons li:hover svg path {fill:#007bff;}
 /*end of footer*/
 /*start of media query*/
 @media only screen and (max-width: 1025px)
